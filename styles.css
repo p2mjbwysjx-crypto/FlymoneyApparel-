@@ -1,136 +1,125 @@
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Rock Salt', cursive;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-header {
-    background-color: black;
+/* Hero Section */
+.hero {
+    background: #333 url('images/your-graffiti-image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: white;
     padding: 20px;
-    text-align: center;
 }
 
-.logo {
-    width: 150px;
-    height: auto;
+.hero h1 {
+    font-size: 4rem;
+    color: #ff3b30; /* Graffiti red */
+    margin-bottom: 10px;
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
+.cta-btn {
+    background-color: #ff3b30;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
 }
 
-.home-section {
-    background: url('images/fly-money-logo.png.jpg') no-repeat center center; /* Optional background image */
-    background-size: cover;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
+.cta-btn:hover {
+    background-color: #e67e22;
 }
 
-.home-section h2 {
-    font-size: 40px;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-}
-
-.home-section p {
-    font-size: 20px;
-    margin: 20px 0;
-}
-
-.shop-now-btn {
-    display: inline-block;
-    background-color:black;
-    color: white;
-    padding: 15px 30px;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.shop-now-btn:hover {
-    background-color: black;
-}
-
-#products {
+/* Product Grid Section */
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 50px 20px;
-    text-align: center;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
+    margin: 0 auto;
 }
 
 .product {
-    border: 2px solid #ddd;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
     padding: 20px;
-    background-color: #f4f4f4;
 }
 
 .product img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 .product h3 {
-    font-size: 24px;
-    margin: 10px 0;
-    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 15px;
 }
 
 .product p {
-    font-size: 20px;
-    color: #333;
+    font-size: 1.2rem;
+    color: #f39c12; /* Graffiti yellow */
 }
 
 .add-to-cart-btn {
-    background-color: black;
+    background-color: #ff3b30;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
 }
 
 .add-to-cart-btn:hover {
-    background-color: black;
+    background-color: #e67e22;
 }
 
+/* Footer */
 footer {
-    background-color: black;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}/* Instagram Handle Styling */
-footer p a {
-    color: #E4405F; /* Instagram's signature pink color */
-    text-decoration: none;
-    font-weight: bold;
+    padding: 20px;
+    font-size: 1rem;
 }
 
-footer p a:hover {
-    text-decoration: underline;
-}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
 
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

@@ -123,4 +123,14 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}/* Instagram Handle Styling */
+footer p a {
+    color: #E4405F; /* Instagram's signature pink color */
+    text-decoration: none;
+    font-weight: bold;
 }
+
+footer p a:hover {
+    text-decoration: underline;
+}
+

@@ -14,7 +14,7 @@ header {
 }
 
 .logo {
-    width: 150px;
+    width: 100px;
     height: auto;
 }
 
@@ -55,7 +55,7 @@ header nav ul li a {
 
 .shop-now-btn {
     display: inline-block;
-    background-color: red;
+    background-color:black;
     color: white;
     padding: 15px 30px;
     font-size: 18px;
@@ -65,7 +65,7 @@ header nav ul li a {
 }
 
 .shop-now-btn:hover {
-    background-color: darkred;
+    background-color: black;
 }
 
 #products {
@@ -103,7 +103,7 @@ header nav ul li a {
 }
 
 .add-to-cart-btn {
-    background-color: red;
+    background-color: black;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -112,7 +112,7 @@ header nav ul li a {
 }
 
 .add-to-cart-btn:hover {
-    background-color: darkred;
+    background-color: black;
 }
 
 footer {

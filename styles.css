@@ -1,33 +1,41 @@
-/* Homepage header styling */
-.homepage-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #fff; /* Or whatever fits your theme */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly Money Apparel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    <header>
+    
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-.logo {
-  width: 150px; /* Adjust size based on your design */
-  height: auto;
-}
+    <section id="home">
+        <div class="banner">
+            <img src="path_to_your_image.jpg" alt="Fly Money Apparel">
+            <button onclick="window.location.href='#products'">Shop Now</button>
+        </div>
+    </section>
 
-/* Hero section styles */
-.hero {
-  height: 100vh;
-  background: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <!-- Add your product details here -->
+        </div>
+    </section>
 
-.content {
-  padding: 20px;
-  background: #fafafa; /* Example styling */
-}
+    <footer>
+        <p>&copy; 2025 Fly Money Apparel</p>
+    </footer>
+
+</body>
+</html>
